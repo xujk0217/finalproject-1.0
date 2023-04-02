@@ -6,12 +6,9 @@ app = Flask(__name__)
 @app.route("/")
 @app.route("/news")
 def news():
-    title=bs()
-    return render_template('mainnews.html', title1=title[0])
-
-
-
-
+    bbcbata=bs()
+    # return render_template('mainnews.html', bbcfnew=bbcbata[0], bbcsnew=bbcbata[1])
+    return render_template('mainnews.html', bbcdata=bbcbata)
 
 
 

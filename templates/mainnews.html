@@ -10,9 +10,17 @@
 <body>
     <h1>Collector</h1>
     <hr>
+    <h2>BBC</h2>
     <section>
-        <h2>BBC</h2>
-        <a href="{{bbclink1"}}>{{bbctitle1}}</a>
+        {% for data in bbcdata %}
+        <div>
+            <a href="https://www.bbc.com/{{data[1]}}" target="_blank">{{data[0]}}</a>
+            <p>{{data[2]}}</p>
+        </div>
+        <hr>
+        {% endfor %}
     </section>
+    
+
 </body>
 </html>

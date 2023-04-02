@@ -14,8 +14,25 @@ def bs():
     #print('===得到的部份HTML內容===\n', data[2651:3500])
 
     root = bs4.BeautifulSoup(data,"html.parser")#解析器
-    bbctitles = root.find_all("li", class_="title")#find title in div
+    promo = root.find("section", class_="module--promo")
+    bbctitles = promo.find_all("a", class_="media__link")#find title in div
     #print(titles[0].text)
-    bbclink = root.find_all("li", class_="title")
+    bbcmain = promo.find_all("p", class_="media__summary")
+    bbcdata = []
+    for i in range(len(bbctitles)):
+        itemcol = []
+        title=bbctitles[i].text
+        itemcol.append(title)
+        url=bbctitles[i].get('href')
+        itemcol.append(url)
+        try:
+            content=bbcmain[i].text
+            itemcol.append(content)
+        except IndexError:
+            itemcol.append('no content')
+        bbcdata.append(itemcol)
 
-    return bbctitles ,bbclink
+    #bbclinks = root.find_all("a[herf]", class_="media__link")
+    #print('bbctitles[0]')
+    #print(type(bbctitles))
+    return bbcdata
