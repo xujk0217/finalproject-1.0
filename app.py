@@ -1,12 +1,12 @@
 from flask import Flask, render_template
-from collect import bs
+from collect import bsbbc
 
 app = Flask(__name__)
 
 @app.route("/")
 @app.route("/news")
 def news():
-    bbcbata=bs()
+    bbcbata=bsbbc()
     # return render_template('mainnews.html', bbcfnew=bbcbata[0], bbcsnew=bbcbata[1])
     return render_template('mainnews.html', bbcdata=bbcbata)
 

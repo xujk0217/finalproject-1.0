@@ -1,7 +1,7 @@
 import urllib.request as req
 import bs4
 
-def bs():
+def bsbbc():
     url = "https://www.bbc.com"
     # 幫request加上一個header
     newURL = req.Request(url, headers = {
