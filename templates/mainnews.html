@@ -1,150 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collector</title>
-    <link rel="stylesheet" href="static/mainnew.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collector</title>
+  <link rel="stylesheet" href="static/mainnew.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-   
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">Collector</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
 
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            News
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://www.bbc.com" target="_blank">BBC</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#" target="_blank">Another newspage</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#" target="_blank">Something else newspage</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Movies
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://www.bbc.com" target="_blank">BBC</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#" target="_blank">Another newspage</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#" target="_blank">Something else newspage</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Animes
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://www.bbc.com" target="_blank">BBC</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#" target="_blank">Another newspage</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#" target="_blank">Something else newspage</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="https://www.bbc.com" target="_blank">More</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#Anime">test</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Collector</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
 
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#News">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Movies">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Anime">Anime</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              News
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.bbc.com" target="_blank">BBC</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="https://www.wsj.com/?gclid=Cj0KCQjw8qmhBhClARIsANAtbodKLgqnUcV6B-rMBgB6EMgp5-JEjGQV2tQ50yPLzzzzz8bqXOvPhKYaAhoFEALw_wcB&gclsrc=aw.ds&ef_id=ZCgUAAAAAGTO-QAm:20230403091551:s" target="_blank">The Wall Street Journal</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Movies
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://movies.yahoo.com.tw/movie_intheaters.html"
+                  target="_blank">yahoo movies</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="https://www.u-movie.com.tw/cinema/index.php?ver=tw&portal=cinema" target="_blank">universal cinemas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Animes
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.mappa.co.jp/" target="_blank">mappa</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="https://www.ufotable.com/" target="_blank">ufotable</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="https://cloverworks.co.jp/?doing_wp_cron=1680513329.5112071037292480468750" target="_blank">clover works</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" target="_blank">More</a>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search" action="https://www.google.com/search" target="_blank">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+
   <div class="container">
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://static.vecteezy.com/ti/gratis-vector/p3/5502524-bioscoop-achtergrond-concept-film-theater-object-op-rood-gordijn-achtergrond-en-film-tijd-met-elektrische-lampen-frame-illustratie-gratis-vector.jpg" class="d-block w-100" alt="img1">
-          </div>
-          <div class="carousel-item">
-            <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/newscms/2019_01/2705191/nbc-social-default.png" class="d-block w-100" alt="img3">
-          </div>
-          <div class="carousel-item">
-            <img src="https://img.4gamers.com.tw/news-image/9b98a440-5abf-4c69-9281-f7088fad1e6c.jpg" class="d-block w-100" alt="img3">
-          </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://s.abcnews.com/images/US/donald-trump-2-ap-gmh-230320_1679351664883_hpMain_16x9_992.jpg"
+            class="d-block w-100" alt="img1">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <img src="https://media.zenfs.com/ko/news_ttv_com_tw_433/1f0f7fdc2dffdad526c8a828ce3dfb6b"
+            class="d-block w-100" alt="img3">
+        </div>
+        <div class="carousel-item">
+          <img src="https://img.4gamers.com.tw/news-image/9b98a440-5abf-4c69-9281-f7088fad1e6c.jpg"
+            class="d-block w-100" alt="img3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <hr>
-    <h1>NEWS</h1>
-    <hr>
-    <h2>BBC</h2>
-    <section>
-        {% for data in bbcdata %}
-        <div class="newbox">
-            <a href="https://www.bbc.com/{{data[1]}}" target="_blank" class="title">{{data[0]}}</a>
-            <p id="content">{{data[2]}}</p>
-        </div>
-        <hr>
-        {% endfor %}
-    </section>
 
+    <h1 id="News">NEWS</h1>
+    <hr>
+    <h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/BBC_News_2022_%28Alt%29.svg/2560px-BBC_News_2022_%28Alt%29.svg.png"
+        alt="BBC" class="icon">
+    </h2>
     {% for data in bbcdata %}
     <div class="card border-primary mb-3" style="max-width: 100rem;">
-      <a href="https://www.bbc.com/{{data[1]}}" target="_blank" class="card-header">{{data[0]}}</a>
       <div class="card-body text-primary">
         <a href="https://www.bbc.com/{{data[1]}}" target="_blank" class="card-title">{{data[0]}}</a>
         <p class="card-text">{{data[2]}}</p>
       </div>
     </div>
     {% endfor %}
-
     <hr>
-    <h1>MOVIES</h1>
-    <hr>
-    <h2>BBC</h2>
-    <section>
-      <div class="row">
-        {% for data in bbcdata %}
-        <div class="newbox col-3 p-2">
-          <a href="https://www.bbc.com/{{data[1]}}" target="_blank" class="title">{{data[0]}}</a>
-          <p id="content">{{data[2]}}</p>
-        </div>
-        {% endfor %}
+    <h2>
+      <img src="https://images.squarespace-cdn.com/content/v1/5a217bf0692ebe67c9327049/1512583435267-4AJHB44FSLMXHT0W8TU2/Wall-Street-Journal-Logo-2+copy.jpg"
+        alt="The Wall Street Journal" class="icon">
+    </h2>
+    {% for data in wsjdata %}
+    <div class="card border-primary mb-3" style="max-width: 100rem;">
+      <div class="card-body text-primary">
+        <a href="{{data[1]}}" target="_blank" class="card-title">{{data[0]}}</a>
+        <p class="card-text">{{data[2]}}</p>
       </div>
-    </section>
+    </div>
+    {% endfor %}
 
     <hr>
-    <h1>ANIMES</h1>
+    <h1 id="Movies">MOVIES</h1>
     <hr>
-    <h2 id="Anime">BBC</h2>
-    <section>
-        {% for data in bbcdata %}
-        <div class="newbox">
-            <a href="https://www.bbc.com/{{data[1]}}" target="_blank" class="title">{{data[0]}}</a>
-            <p id="content">{{data[2]}}</p>
+    <h2>
+      <img src="https://s.yimg.com/os/creatr-uploaded-images/2020-12/3e5c1f80-394a-11eb-bfbd-75f2f178d935"
+        alt="yahoo movies" class="icon">
+    </h2>
+    {% for data in yahoodata %}
+    <div class="card border-primary mb-3" style="max-width: 100rem;">
+      <p class="card-header">{{data[2]}}</a>
+      <div class="card-body text-primary">
+        <a href="{{data[1]}}" target="_blank" class="card-title">{{data[0]}}</a>
+      </div>
+    </div>
+    {% endfor %}
+
+    <hr>
+    <h2>
+      <img src="https://yc.cldmlk.com/9999/1513211652982_popup-logo.png"
+        alt="universal cinemas" class="icon">
+    </h2>
+    {% for data in unidata %}
+    <div class="card border-primary mb-3" style="max-width: 100rem;">
+      <div class="card-body text-primary">
+        <a href="https://www.u-movie.com.tw/cinema/page.php?page_type=coming{{data[1]}}" target="_blank" class="card-title">{{data[0]}}</a>
+        <p class="card-text">{{data[2]}}</p>
+      </div>
+    </div>
+    {% endfor %}
+
+    <hr>
+    <h1 id="Anime">ANIMES</h1>
+    <hr>
+    <h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/MAPPA_Logo.svg/2560px-MAPPA_Logo.svg.png"
+        alt="mappa" class="icon">
+    </h2>
+    {% for mdata in mappadata %}
+    <div class="card border-primary mb-3" style="max-width: 100rem;">
+      <p class="card-header">{{mdata[2]}}</a>
+      <div class="card-body text-primary">
+        <a href="{{mdata[1]}}" target="_blank" class="card-title">{{mdata[0]}}</a>
+      </div>
+    </div>
+    {% endfor %}
+    <hr>
+    <h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Ufotable_Animaci%C3%B3n.png" alt="ufotable" class="icon">
+    </h2>
+    {% for mdata in ufodata %}
+    <div class="card border-primary mb-3" style="max-width: 100rem;">
+      <p class="card-header">{{mdata[2]}}</a>
+      <div class="card-body text-primary">
+        <a href="{{mdata[1]}}" target="_blank" class="card-title">{{mdata[0]}}</a>
+      </div>
+    </div>
+    {% endfor %}
+    <hr>
+    <h2>
+      <img src="https://cloverworks.co.jp/assets/img/logo.png" alt="clover works" class="icon">
+    </h2>
+    {% for mdata in cwdata %}
+    <div class="card border-primary mb-3" style="max-width: 100rem;">
+      <p class="card-header">{{mdata[2]}}</a>
+      <div class="card-body text-primary">
+        <a href="{{mdata[1]}}" target="_blank" class="card-title">{{mdata[0]}}</a>
+      </div>
+    </div>
+    {% endfor %}
+
+</div>
+    <footer class="footer bottom-0 text-center align-items-center" style="background-color: rgb(210, 209, 209);">
+      <div class="container">
+        
+        <div class="list-group list-group-horizontal justify-content-center">
+
+          <a href="#" class="navbar-brand mt-2">
+            Collector
+          </a>
+          
         </div>
-        <hr>
-        {% endfor %}
-    </section>
-  </div>
+
+        <div class="text-center mt-3"><small class="text-muted">BBC, The Wall Street Journal, yahoo movies, universal cinemas, Mappa, Ufotable, Cloverworks<br>Copyright © XU JUN KAI, Tainan First Senior High School 307. All rights reserved.</small></div>
+      </div>
+    </footer>
+
 </body>
+
 </html>

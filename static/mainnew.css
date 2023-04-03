@@ -1,20 +1,24 @@
 a.title,a.card-title{
     font-size: 25px;
 }
-div.newbox:nth-of-type(2n){
-    background-color: rgb(240, 213, 181);
-    
-    width: 200;
-    height: 100;
-}
-div.newbox ,h2{
-    padding-left: 10%;
-}
-div.newbox{
-    border: 6px solid rgb(19, 29, 139);
-}
+
 a.navbar-brand{
     font-size: 35px;
     font-family: fantasy;
     padding-top: 20px;
+}
+
+img.icon{
+    width: 20%;
+}
+
+a.card-title, h1{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p.card-text{
+    color: rgb(69, 69, 69);
 }
