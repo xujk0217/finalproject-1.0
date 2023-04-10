@@ -154,7 +154,7 @@
     </h2>
     {% for data in yahoodata %}
     <div class="card border-primary mb-3" style="max-width: 100rem;">
-      <p class="card-header">{{data[2]}}</a>
+      <p class="card-header">{{data[2]}}</p>
       <div class="card-body text-primary">
         <a href="{{data[1]}}" target="_blank" class="card-title">{{data[0]}}</a>
       </div>
@@ -184,7 +184,7 @@
     </h2>
     {% for mdata in mappadata %}
     <div class="card border-primary mb-3" style="max-width: 100rem;">
-      <p class="card-header">{{mdata[2]}}</a>
+      <p class="card-header">{{mdata[2]}}</p>
       <div class="card-body text-primary">
         <a href="{{mdata[1]}}" target="_blank" class="card-title">{{mdata[0]}}</a>
       </div>
@@ -208,12 +208,16 @@
     </h2>
     {% for mdata in cwdata %}
     <div class="card border-primary mb-3" style="max-width: 100rem;">
-      <p class="card-header">{{mdata[2]}}</a>
+      <p class="card-header">{{mdata[2]}}</p>
       <div class="card-body text-primary">
         <a href="{{mdata[1]}}" target="_blank" class="card-title">{{mdata[0]}}</a>
       </div>
     </div>
     {% endfor %}
+
+    <div class="sticky-bottom">
+      <a href="#" class="toptop">to top</a>
+    </div>
 
 </div>
     <footer class="footer bottom-0 text-center align-items-center" style="background-color: rgb(210, 209, 209);">

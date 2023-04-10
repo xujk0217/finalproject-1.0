@@ -110,11 +110,12 @@ def bsyahoo():
         itemcol.append(url)
         #content = yahoocontent[i].text
         #itemcol.append(content)
+        oa = i//6
         try:
-            time=yahoodate[i].text
+            time=yahoodate[oa].text
             itemcol.append(time)
         except IndexError:
-            itemcol.append('no date')
+            itemcol.append(yahoodate[1].text)
         yahoodata.append(itemcol)
     return yahoodata
 
