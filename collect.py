@@ -266,3 +266,34 @@ def bsuni():
             itemcol.append('no content')
         unidata.append(itemcol)
     return unidata
+
+
+# def bsimg():
+#     url = "https://www.bbc.com/news"
+#     newURL = req.Request(url, headers = {
+#         "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:72.0) Gecko/20100101 Firefox/72.0"
+#     })
+#     with req.urlopen(newURL) as response:
+#         data = response.read().decode("utf-8")
+#     root = bs4.BeautifulSoup(data,"html.parser")
+#     imgbbc = root.find_all("img", class_="image-replace")
+
+#     # url = "https://www.wsj.com/?gclid=Cj0KCQjw8qmhBhClARIsANAtbodKLgqnUcV6B-rMBgB6EMgp5-JEjGQV2tQ50yPLzzzzz8bqXOvPhKYaAhoFEALw_wcB&gclsrc=aw.ds&ef_id=ZCgUAAAAAGTO-QAm:20230403091551:s"
+#     # newURL = req.Request(url, headers = {
+#     #     "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:72.0) Gecko/20100101 Firefox/72.0"
+#     # })
+#     # with req.urlopen(newURL) as response:
+#     #     data = response.read().decode("utf-8")
+#     # roots = bs4.BeautifulSoup(data,"html.parser")
+#     # imgwsj = roots.find_all("img", class_="WSJTheme--image--At42misj ")
+
+
+#     imgdata = []
+#     for i in range(1):
+#         itemcol = []
+#         bbcim=imgbbc[i].get('href')
+#         itemcol.append(bbcim)
+#         # swjim=imgwsj[i].get('src')
+#         # itemcol.append(swjim)
+#         imgdata.append(itemcol)
+#     return imgdata

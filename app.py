@@ -6,6 +6,7 @@ from collect import bsmappa
 from collect import bsufo
 from collect import bscw
 from collect import bsuni
+# from collect import bsimg
 
 app = Flask(__name__)
 
@@ -18,6 +19,7 @@ def bbcnews():
     cwbata=bscw()
     wsjbata=bswsj()
     unibata=bsuni()
+    # imgbata=bsimg()
     # return render_template('mainnews.html', bbcfnew=bbcbata[0], bbcsnew=bbcbata[1])
     return render_template('mainnews.html', bbcdata=bbcbata, mappadata=mappabata, yahoodata=yahoobata, ufodata=ufobata, cwdata=cwbata, wsjdata=wsjbata, unidata=unibata)
 
